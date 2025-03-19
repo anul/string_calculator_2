@@ -17,7 +17,11 @@ def add(numbers)
 		total = total.map {|n|
 			n = n.to_i
 			if n < 0
-				puts "negative numbers are not allowed"
+				begin	
+				  raise "Negative numbers are not allowed"
+				rescue Exception=>ex
+				  puts ex.message
+				end
 				return
 			end
 			n
