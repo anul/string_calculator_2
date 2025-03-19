@@ -2,7 +2,7 @@
 # execute code using string_calculator.rb
 
 def add(numbers)
-	# custom delimiter
+  # custom delimiter
   numbers = numbers.to_s
   delimiter = ","
   if numbers[0] == "/" and numbers[1] == "/"
@@ -18,9 +18,9 @@ def add(numbers)
 			n = n.to_i
 			if n < 0
 				begin	
-				  raise "Negative numbers are not allowed"
+					raise "Negative numbers are not allowed"
 				rescue Exception=>ex
-				  puts ex.message
+					puts ex.message
 				end
 				return
 			end
