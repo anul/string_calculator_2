@@ -62,6 +62,6 @@ describe "string calculator"  do
 	  assert_equal(add("//;\n1;2"), 3)
   end
   it "returns nil when input contains negative number"  do
-	  assert_equal(add("1,-5"), nil)
+	  assert_nil(add("1,-5"))
   end
 end
